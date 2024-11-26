@@ -60,7 +60,14 @@ public class MovementCharacter : MonoBehaviour {
             Destroy(other.gameObject);
             cm.coinCount++;
         }
+
+        if (other.gameObject.CompareTag("Wall")) 
+        {
+            Destroy(other.gameObject);
+        }
     }
 
+
+  
 }
 
